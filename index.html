@@ -1,15 +1,21 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap Project</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+      aside > div.list-group{
+        position: sticky;
+        top: 70px;
+      }
+    </style>
   </head>
   <body>
     
     <!--NAV START-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" data-bs-theme="dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">OCTO</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +55,7 @@
 
     <!--CONTAİNER START-->
     <div class="container-fluid">
-      <div class="row align-items-center bg-dark text-light p-5">
+      <div id="1" class="row align-items-center bg-dark text-light p-5">
         <div class="col-sm-4">
           <!--CAROUSEL INFO START-->
           <div id="carouselExample" class="carousel slide">
@@ -116,7 +122,7 @@
     <!--CONTAİNER START-->
     <div class="container my-3">
       <!--HERO INFO START-->
-      <div class="row justify-content-center text-center bg-light border shadow rounded">
+      <div id="2" class="row justify-content-center text-center border shadow rounded">
         <div class="col-sm-8">
           <h1 class="display-5">OCTO sizi geleceğe taşır.</h1>
           <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, reprehenderit!</p>
@@ -126,7 +132,7 @@
       </div>
       <!--HERO INFO END-->
       <!--CARDS START-->
-      <div class="row my-4">
+      <div id="3" class="row my-4">
         <div class="col-sm-6">
           <div class="card  shadow">
             <div class="row g-0">
@@ -138,7 +144,7 @@
                   <h5 class="card-title">Product-1</h5>
                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                   <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                  <a href="#" class="btn btn-outline-primary w-100">İncele</a>
+                  <a href="#" class="btn btn-outline-primary w-100 mt-4">İncele</a>
                 </div>
               </div>
             </div>
@@ -164,6 +170,63 @@
         </div>
       </div>
       <!--CARDS END-->
+
+      <!--ASİDE VE CONTENT START-->
+      <div class="row">
+        <!--ASİDE START-->
+        <aside class="col-sm-3">
+          <div class="list-group shadow">
+            <a href="#1" class="list-group-item list-group-item-action">Bilgiler</a>
+            <a href="#3" class="list-group-item list-group-item-action">Ürünler</a>
+            <a href="#4" class="list-group-item list-group-item-action">Makaleler</a>
+            <a href="#1" class="list-group-item list-group-item-action">Görseller</a>
+          </div>
+        </aside>
+        <!--ASİDE END-->
+
+        <!--SECTİON START-->
+        <section id="4" class="col-sm-9">
+          <article class="card p-3 shadow-sm m-2">
+            <img class="img-thumbnail w-100 mb-3" src="https://picsum.photos/id/12/600/240" alt="">
+            <h2>Makale 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis necessitatibus esse temporibus porro alias dolorem consequatur magni deserunt eaque dicta.</p>
+            <p>Minus delectus sapiente officia rerum soluta accusantium amet sint placeat totam tempora cumque aliquam eveniet, ullam voluptatum omnis quia architecto?</p>
+            <p>Tenetur vitae laboriosam culpa! At sit, eius vel quod odio ipsa iusto quisquam fuga assumenda amet dignissimos mollitia quasi porro.</p>
+          </article>
+          <article class="card p-3 shadow-sm m-2">
+            <img class="img-thumbnail w-100 mb-3" src="https://picsum.photos/id/13/600/240" alt="">
+            <h2>Makale 2</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat ex eligendi dolorem est laudantium alias neque dolore reprehenderit maxime? Nulla.</p>
+            <p>Quo atque cupiditate adipisci veniam necessitatibus facere incidunt dolorum totam blanditiis itaque vel quaerat suscipit, odit tenetur optio nulla nemo.</p>
+            <p>Recusandae, maxime neque similique consequatur accusantium perspiciatis esse quasi, natus rerum aspernatur dicta autem, harum eos minima! Exercitationem, nemo itaque.</p>
+          </article>
+          <article class="card p-3 shadow-sm m-2">
+            <img class="img-thumbnail w-100 mb-3" src="https://picsum.photos/id/14/600/240" alt="">
+            <h2>Makale 3</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat est dolores nihil ut eaque quae corporis suscipit velit quibusdam tenetur?</p>
+            <p>Provident exercitationem totam minima reprehenderit aut impedit? Magnam reiciendis necessitatibus, quasi cumque vel, ea maxime dolor accusantium molestiae voluptate voluptas!</p>
+            <p>Odio quaerat aspernatur dolore possimus ullam fugiat totam qui earum? Ipsum, consequatur tenetur incidunt animi corrupti ad nemo doloribus necessitatibus?</p>
+          </article>
+          <article class="card p-3 shadow-sm m-2">
+            <img class="img-thumbnail w-100 mb-3" src="https://picsum.photos/id/15/600/240" alt="">
+            <h2>Makale 4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam et dolorem sunt ullam error praesentium incidunt iusto nobis omnis odit.</p>
+            <p>Quasi temporibus ratione facere! Necessitatibus voluptatem iste ad officia, porro fugiat tenetur? Nihil autem quis alias porro iste rerum reprehenderit!</p>
+            <p>Mollitia repellat ex dignissimos sed earum! Porro ab tempore iure, doloremque inventore non eaque quaerat officiis quasi tenetur eveniet accusantium!</p>
+          </article>
+          <article class="card p-3 shadow-sm m-2">
+            <img class="img-thumbnail w-100 mb-3" src="https://picsum.photos/id/16/600/240" alt="">
+            <h2>Makale 5</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis quam minus dolor alias animi exercitationem aperiam itaque beatae sed laboriosam?</p>
+            <p>Sequi maiores suscipit tempore nisi accusantium nostrum velit eligendi obcaecati officia dolore ea provident, alias beatae mollitia quasi amet quas.</p>
+            <p>Odit dicta obcaecati consectetur, saepe ullam eius aliquid similique ex beatae quo, alias cupiditate nam id soluta, rerum quia explicabo?</p>
+          </article>
+        </section>
+        <!--SECTİON END-->
+
+      </div>
+      <!--ASİDE VE CONTENT END-->
+
 
     </div>
     <!--CONTAİNER END-->
