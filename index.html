@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    
+    <!--NAV START-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">OCTO</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Anasayfa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hakkımızda</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Ürünler  
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">T-shirt</a></li>
+                <li><a class="dropdown-item" href="#">Pantolon</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Mont</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Ara" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Ara</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--NAV END-->
+
+    <!--CONTAİNER START-->
+    <div class="container-fluid">
+      <div class="row align-items-center bg-dark text-light p-5">
+        <div class="col-sm-4">
+          <!--CAROUSEL INFO START-->
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+               <h2>firmamızın Vizyonu</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nostrum non dolores a deleniti rerum odit nesciunt sequi culpa ratione.</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quisquam provident, numquam beatae saepe rem quos veritatis. Necessitatibus, esse minus?</p>
+              </div>
+              <div class="carousel-item">
+               <h2>firmamızın Misyonu</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nostrum non dolores a deleniti rerum odit nesciunt sequi culpa ratione.</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quisquam provident, numquam beatae saepe rem quos veritatis. Necessitatibus, esse minus?</p>
+              </div>
+              <div class="carousel-item">
+               <h2>firmamızın Sundukları</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nostrum non dolores a deleniti rerum odit nesciunt sequi culpa ratione.</p>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quisquam provident, numquam beatae saepe rem quos veritatis. Necessitatibus, esse minus?</p>
+              </div>
+            </div>
+          </div>
+          <!--CAROUSEL INFO END-->
+
+        </div>
+        <div class="col-sm-8">
+          <!--CAROUSEL IMG START-->
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://picsum.photos/id/37/1200/350" class="d-block w-100 rounded" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://picsum.photos/id/40/1200/350" class="d-block w-100 rounded" alt="">
+              </div>
+              <div class="carousel-item">
+                <img src="https://picsum.photos/id/56/1200/350" class="d-block w-100 rounded" alt="">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!--CAROUSEL IMG END-->        
+        </div>
+      </div>
+    </div>
+    <!--CONTAİNER END-->
+
+    <!--CONTAİNER START-->
+    <div class="container my-3">
+      <!--HERO INFO START-->
+      <div class="row justify-content-center text-center bg-light border shadow rounded">
+        <div class="col-sm-8">
+          <h1 class="display-5">OCTO sizi geleceğe taşır.</h1>
+          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, reprehenderit!</p>
+          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, nemo.</p>
+          <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, fugit?</p>
+        </div>
+      </div>
+      <!--HERO INFO START-->
+    </div>
+    <!--CONTAİNER END-->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
